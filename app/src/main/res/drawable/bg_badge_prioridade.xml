@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cor padrão; no Java dá pra trocar com setBackgroundTintList conforme a prioridade -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/prioridade_media" />
+    <corners android:radius="20dp" />
+</shape>

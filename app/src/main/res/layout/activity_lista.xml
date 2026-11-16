@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TELA 2 · Lista de registros -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    android:orientation="vertical"
+    tools:context=".ListaActivity">
+
+    <!-- Cabeçalho -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@color/primaria"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="@dimen/margem_tela">
+
+        <ImageButton
+            android:id="@+id/btnVoltarLista"
+            style="@style/BotaoVoltar" />
+
+        <TextView
+            style="@style/TituloCabecalho"
+            android:text="@string/lista_titulo" />
+
+        <TextView
+            android:id="@+id/tvQuantidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_badge"
+            android:paddingStart="12dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/texto_principal"
+            android:textStyle="bold"
+            tools:text="3" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/listRegistros"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="12dp"
+            android:padding="@dimen/espaco_medio"
+            tools:listitem="@layout/item_registro" />
+
+        <!-- Estado vazio: no Java use listRegistros.setEmptyView(layoutVazio) -->
+        <LinearLayout
+            android:id="@+id/layoutVazio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="40dp"
+            android:visibility="gone"
+            tools:visibility="gone">
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_vazio" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/lista_vazia_titulo"
+                android:textColor="@color/texto_principal"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@string/lista_vazia_texto"
+                android:textColor="@color/texto_secundario"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAdicionar"
+        style="@style/BotaoDestaque"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/espaco_medio"
+        android:text="@string/btn_adicionar"
+        app:icon="@drawable/ic_adicionar"
+        app:iconGravity="textStart" />
+</LinearLayout>

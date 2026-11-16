@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Registro de Produção</string>
+
+    <!-- Tela inicial -->
+    <string name="inicio_titulo">Registro de Produção</string>
+    <string name="inicio_subtitulo">Registros, listas de controle e anotações da produção em um só lugar</string>
+    <string name="inicio_total_rotulo">Registros cadastrados</string>
+    <string name="inicio_offline">Funciona sem internet · dados salvos no aparelho</string>
+    <string name="btn_novo_registro">Novo registro</string>
+    <string name="btn_ver_registros">Ver registros</string>
+
+    <!-- Lista -->
+    <string name="lista_titulo">Registros</string>
+    <string name="lista_vazia_titulo">Nenhum registro ainda</string>
+    <string name="lista_vazia_texto">Toque em \"Novo registro\" para cadastrar o primeiro.</string>
+    <string name="btn_adicionar">Novo registro</string>
+
+    <!-- Formulário -->
+    <string name="form_titulo_novo">Novo registro</string>
+    <string name="form_titulo_editar">Editar registro</string>
+    <string name="campo_titulo">Título *</string>
+    <string name="campo_titulo_dica">Ex.: Inspeção da linha 3</string>
+    <string name="campo_categoria">Categoria</string>
+    <string name="campo_setor">Setor / Linha</string>
+    <string name="campo_setor_dica">Ex.: Montagem – Linha 3</string>
+    <string name="campo_responsavel">Responsável</string>
+    <string name="campo_responsavel_dica">Nome de quem registrou</string>
+    <string name="campo_descricao">Descrição</string>
+    <string name="campo_descricao_dica">Detalhes, itens verificados, observações…</string>
+    <string name="campo_prioridade">Prioridade</string>
+    <string name="prioridade_baixa">Baixa</string>
+    <string name="prioridade_media">Média</string>
+    <string name="prioridade_alta">Alta</string>
+    <string name="btn_salvar">Salvar</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="campo_obrigatorio">* campo obrigatório</string>
+
+    <!-- Detalhes -->
+    <string name="detalhes_titulo">Detalhes</string>
+    <string name="detalhe_data">Criado em</string>
+    <string name="btn_editar">Editar</string>
+    <string name="btn_excluir">Excluir</string>
+
+    <!-- Feedback (usar em Toast / AlertDialog no Java) -->
+    <string name="msg_salvo">Registro salvo com sucesso!</string>
+    <string name="msg_atualizado">Registro atualizado!</string>
+    <string name="msg_excluido">Registro excluído.</string>
+    <string name="msg_erro_titulo">Informe o título do registro.</string>
+    <string name="dialogo_excluir_titulo">Excluir registro?</string>
+    <string name="dialogo_excluir_texto">Essa ação não pode ser desfeita.</string>
+    <string name="dialogo_sim">Excluir</string>
+    <string name="dialogo_nao">Cancelar</string>
+
+    <string name="desc_voltar">Voltar</string>
+</resources>

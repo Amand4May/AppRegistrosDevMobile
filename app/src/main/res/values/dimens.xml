@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margem_tela">20dp</dimen>
+    <dimen name="espaco_pequeno">8dp</dimen>
+    <dimen name="espaco_medio">16dp</dimen>
+    <dimen name="espaco_grande">24dp</dimen>
+    <!-- Botões altos: fáceis de tocar com luva -->
+    <dimen name="altura_botao">60dp</dimen>
+    <dimen name="altura_campo">56dp</dimen>
+    <dimen name="raio_card">14dp</dimen>
+    <dimen name="texto_titulo_tela">22sp</dimen>
+    <dimen name="texto_rotulo">15sp</dimen>
+    <dimen name="texto_valor">18sp</dimen>
+</resources>

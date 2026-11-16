@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TELA 4 · Detalhes do registro -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    android:orientation="vertical"
+    tools:context=".DetalhesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@color/primaria"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="@dimen/margem_tela">
+
+        <ImageButton
+            android:id="@+id/btnVoltarDetalhes"
+            style="@style/BotaoVoltar" />
+
+        <TextView
+            style="@style/TituloCabecalho"
+            android:text="@string/detalhes_titulo" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/espaco_medio"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="@dimen/margem_tela">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvDetalheCategoria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_badge"
+                    android:paddingStart="12dp"
+                    android:paddingTop="4dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="4dp"
+                    android:textColor="@color/texto_principal"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    tools:text="Lista de controle" />
+
+                <TextView
+                    android:id="@+id/tvDetalhePrioridade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_badge_prioridade"
+                    android:paddingStart="12dp"
+                    android:paddingTop="4dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="4dp"
+                    android:textColor="@color/branco"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    tools:text="Média" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvDetalheTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/texto_principal"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:text="Inspeção da linha 3" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/borda" />
+
+            <TextView
+                style="@style/TextoRotulo"
+                android:text="@string/campo_setor" />
+
+            <TextView
+                android:id="@+id/tvDetalheSetor"
+                style="@style/TextoValor"
+                tools:text="Montagem – Linha 3" />
+
+            <TextView
+                style="@style/TextoRotulo"
+                android:text="@string/campo_responsavel" />
+
+            <TextView
+                android:id="@+id/tvDetalheResponsavel"
+                style="@style/TextoValor"
+                tools:text="Carlos Souza" />
+
+            <TextView
+                style="@style/TextoRotulo"
+                android:text="@string/detalhe_data" />
+
+            <TextView
+                android:id="@+id/tvDetalheData"
+                style="@style/TextoValor"
+                tools:text="16/11/2026 às 14:32" />
+
+            <TextView
+                style="@style/TextoRotulo"
+                android:text="@string/campo_descricao" />
+
+            <TextView
+                android:id="@+id/tvDetalheDescricao"
+                style="@style/TextoValor"
+                android:lineSpacingExtra="4dp"
+                tools:text="Verificar sensores, nível de óleo e proteção da esteira antes do início do turno. Registrar qualquer anomalia." />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/superficie"
+        android:elevation="8dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/espaco_medio">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnExcluir"
+            style="@style/BotaoPerigo"
+            android:layout_width="0dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="@string/btn_excluir"
+            app:icon="@drawable/ic_excluir"
+            app:iconGravity="textStart" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEditar"
+            style="@style/BotaoPrimario"
+            android:layout_width="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="@string/btn_editar"
+            app:icon="@drawable/ic_editar"
+            app:iconGravity="textStart" />
+    </LinearLayout>
+</LinearLayout>
