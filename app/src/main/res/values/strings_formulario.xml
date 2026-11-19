@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="form_erro_titulo">Informe o título do registro</string>
+    <string name="form_msg_criado">Registro salvo com sucesso</string>
+    <string name="form_msg_atualizado">Registro atualizado com sucesso</string>
+    <string name="form_msg_nao_encontrado">Registro não encontrado</string>
+</resources>
