@@ -2,9 +2,9 @@ package com.exemplo.registros;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
-// PROVISÓRIO: só para testar a navegação entre as telas. O grupo substitui pela versão final.
 public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,5 +15,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(this, FormularioActivity.class)));
         findViewById(R.id.btnVerRegistros).setOnClickListener(v ->
                 startActivity(new Intent(this, ListaActivity.class)));
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        TextView total = findViewById(R.id.tvTotalRegistros);
+        total.setText(String.valueOf(RegistroRepositorio.total()));
     }
 }

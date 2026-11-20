@@ -109,6 +109,6 @@ RegistroRepositorio.total();               // contar
 | Amanda Mayumi | Interface (telas em XML), base de dados em memória |
 | _Nome_ | Lista de registros (adapter e tela de lista) |
 | _Nome_ | Formulário de cadastro e edição |
-| _Nome_ | Tela inicial, tela de detalhes e testes |
+| Gabriel Pereira | Tela inicial, tela de detalhes, Manifest e teste final |
 
 > Mais detalhes técnicos para a equipe (IDs de cada tela, como usar o repositório) estão no [GUIA.md](GUIA.md).
