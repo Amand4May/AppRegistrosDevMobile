@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btnVerRegistros).setOnClickListener(v ->
                 startActivity(new Intent(this, ListaActivity.class)));
     }
+
     @Override
     protected void onResume() {
         super.onResume();
