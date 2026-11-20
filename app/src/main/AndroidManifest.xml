@@ -15,8 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ListaActivity" />
-        <activity android:name=".FormularioActivity" />
-        <activity android:name=".DetalhesActivity" />
+        <activity android:name=".ListaActivity" android:exported="false" />
+        <activity android:name=".FormularioActivity" android:exported="false" />
+        <activity android:name=".DetalhesActivity" android:exported="false" />
     </application>
 </manifest>

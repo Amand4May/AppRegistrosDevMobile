@@ -6,7 +6,7 @@
     <string name="inicio_titulo">Registro de Produção</string>
     <string name="inicio_subtitulo">Registros, listas de controle e anotações da produção em um só lugar</string>
     <string name="inicio_total_rotulo">Registros cadastrados</string>
-    <string name="inicio_offline">Funciona sem internet · dados salvos no aparelho</string>
+    <string name="inicio_offline">Funciona sem internet · registros em memória</string>
     <string name="btn_novo_registro">Novo registro</string>
     <string name="btn_ver_registros">Ver registros</string>
 
@@ -53,4 +53,6 @@
     <string name="dialogo_nao">Cancelar</string>
 
     <string name="desc_voltar">Voltar</string>
+    <string name="detalhe_indisponivel">Registro não encontrado.</string>
+    <string name="detalhe_sem_valor">Não informado</string>
 </resources>
